@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGGFLATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>EGGFLATION</h1>
+        <div id="glb-container"></div>
+        <div id="text-container">
+            <h2>1EGG=$1</h2>
+            <p>CA: 4TZJrSUHkwXQJWiJHi6thT9pjXnT6RLpDzJjqzWE11kR</p>
+            <div class="buttons">
+                <a href="https://gmgn.ai/sol/token/ciGwGjR5_4TZJrSUHkwXQJWiJHi6thT9pjXnT6RLpDzJjqzWE11kR" target="_blank" class="button">BUY</a>
+                <a href="https://x.com/hashtag/EGGFLATION?src=hashtag_click" target="_blank" class="button twitter-button">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer@1.0.0"></script>
+    <script>
+        // Initialize the GLB model viewer
+        const viewer = document.createElement('model-viewer');
+        viewer.setAttribute('src', 'E:/project/eggflation/egg_model.glb'); // Updated path to your GLB file
+        viewer.setAttribute('alt', 'A 3D egg');
+        viewer.setAttribute('auto-rotate', true);
+        viewer.setAttribute('camera-controls', true);
+        viewer.style.width = '100%';
+        viewer.style.height = '60vh'; /* Adjusted height to fit the page */
+        document.getElementById('glb-container').appendChild(viewer);
+    </script>
+</body>
+</html>
+
